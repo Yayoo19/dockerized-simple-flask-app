@@ -29,4 +29,7 @@ jobs:
         env:
           FLASK_APP: src/app.py
       
+      - name: Stop Flask App
+        run: |
+          pkill -f 'flask run'      
       
